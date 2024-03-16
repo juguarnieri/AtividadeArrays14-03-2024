@@ -1,3 +1,5 @@
+// Exemplo 1:
+
 // Um array chamado names é declarado e inicializado com 4 elementos: "Júlia", "Gabriel", "Mateus", "Fernanda".
 let names = ["Júlia", "Gabriel", "Mateus", "Fernanda"];
 
@@ -7,6 +9,7 @@ names.push("Moisés");
 
 console.log(names); //[ 'Júlia', 'Gabriel', 'Mateus', 'Fernanda', 'Amanda', 'Moisés' ] exibe a lista com os itens adicionados.
 
+// Exemplo 2:
 
 // Um array chamado food é declarado e inicializado com 2 elementos: "arroz", "feijão".
 let food = ["arroz", "feijão"];
