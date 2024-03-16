@@ -14,3 +14,18 @@ console.log("Adicionar cor disponível:" , colors);//Adicionar cor disponível: 
 colors.splice(5, 0, 'Vermelho', 'Amarelo', 'Cinza');
 
 console.log("Adicionar mais cores disponíveis no total:", colors); // [ 'Verde', 'Preto', 'Branco', 'Rosa', 'Roxo', 'Azul', 'Vermelho', 'Amarelo', 'Cinza' ]. com mensagem mostrando todas as cores disponíveis.
+
+//Exemplo Remover:
+
+// Inicializando o array animals com uma lista de animais.
+let animals = ["gato", "cachorro", "cavalo", "vaca", "pato", "galinha", "jacaré"];
+
+// Usando splice() para remover elementos do array animals.
+//Está sendo removido elementos a partir do índice 1 (o segundo elemento, "cachorro") e removendo 2 elementos no total ("cachorro" e "cavalo"). Esses elementos removidos são armazenados na variável removedAnimals.
+let removedAnimals = animals.splice(1, 2);
+
+console.log("Animais restantes:", animals);//Exibe os animais restantes no array animals após a remoção.
+console.log("Animais removidos:", removedAnimals);//Exibe os animais removidos, que foram armazenados na variável removedAnimals.
+
+
+

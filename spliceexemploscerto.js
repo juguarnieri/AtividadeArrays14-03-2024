@@ -10,10 +10,11 @@ console.log("Cores disponíveis de lápis:", colors)//Cores disponíveis de láp
 colors.splice(1, 0, 'Preto');
 console.log("Adicionar cor disponível:", colors);//Adicionar cor disponível: [ 'Verde', 'Preto', 'Branco', 'Rosa', 'Roxo', 'Azul' ] com mensagem atualizada.
 
-//O método splice(), estamos adicionando os elementos 'Vermelho', 'Amarelo' e 'Cinza' ao array colors, começando pela posição 5. Está adicionando esses elementos após o elemento na posição 4 (índice 5). 
+//O método splice(), está adicionando multiplos elementos ao array colors, começando pela posição 5. Está adicionando esses elementos após o elemento na posição 4 (índice 5). 
 colors.splice(5, 0, 'Vermelho', 'Amarelo', 'Cinza');
 
-console.log("Adicionar mais cores disponíveis no total:", colors); // [ 'Verde', 'Preto', 'Branco', 'Rosa', 'Roxo', 'Azul', 'Vermelho', 'Amarelo', 'Cinza' ]. com mensagem mostrando todas as cores disponíveis.
+console.log("Adicionar mais cores disponíveis no total:", colors); // Adicionar mais cores disponíveis no total: ['Verde',   'Preto','Branco',  'Rosa','Roxo',    'Vermelho','Amarelo', 'Cinza','Azul']. com mensagem mostrando todas as cores disponíveis.
+
 
 //Exemplo Remover SPLICE:
 
@@ -24,8 +25,26 @@ let animals = ["gato", "cachorro", "cavalo", "vaca", "pato", "galinha", "jacaré
 //Está sendo removido elementos a partir do índice 1 (o segundo elemento, "cachorro") e removendo 2 elementos no total ("cachorro" e "cavalo"). Esses elementos removidos são armazenados na variável removedAnimals.
 let removedAnimals = animals.splice(1, 2);
 
-console.log("Animais restantes:", animals);//Exibe os animais restantes no array animals após a remoção.
-console.log("Animais removidos:", removedAnimals);//Exibe os animais removidos, que foram armazenados na variável removedAnimals.
+//Exibe os animais restantes no array animals após a remoção.
+console.log("Animais restantes:", animals);// Animais restantes: [ 'gato', 'vaca', 'pato', 'galinha', 'jacaré' ]
+//Exibe os animais removidos, que foram armazenados na variável removedAnimals.
+console.log("Animais removidos:", removedAnimals);//Animais removidos: [ 'cachorro', 'cavalo' ]
+
+
+//Exemplo Substituir SPLICE: 
+
+//Inicializando o array fruits com uma lista de frutas.
+let fruits = ["maça", "banana", "mexerica", "uva", "limão", "pera"];
+
+//O método splice() é usado para substituir elementos do array fruits. 
+//Os argumentos (0, 2, "laranja", "abacaxi") indicam a remoção de dois elementos a partir do índice 0 "maça" e "banana" e substituindo-os por "laranja" e "abacaxi".
+fruits.splice(0, 2, "laranja", "abacaxi");
+
+console.log("Após a substituição das frutas:");//Mensagem: Após a substituição das frutas:
+
+//É exibido o array fruits com a mensagem das frutas já substituídas.
+//O método join() foi usado para unir os elementos do array em uma string, separando-os por um ponto e vírgula (;).
+console.log("Frutas atualizadas:", fruits.join("; "));//Frutas atualizadas: laranja; abacaxi; mexerica; uva; limão; pera
 
 
 

@@ -31,4 +31,3 @@ while ((i = clubes.shift()) !== undefined) {
 //executar os itens removidos (valor atual de i)
     console.log(i);
 }
-
